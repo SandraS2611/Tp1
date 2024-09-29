@@ -25,9 +25,11 @@ public class MenuView {
         System.out.println("Desafío 4: Recorrido Caracol");
         System.out.println("Desafío 5: Triángulo Azul");
         System.out.println("Salir");
+        System.out.println("\n");
     }
 
     public void mensajeEnPantalla(String mensaje) {
+        System.out.println("\n");
         System.out.println("----------------------------------------------");
         System.out.println(mensaje);
         System.out.println("----------------------------------------------");

@@ -2,13 +2,16 @@ package miPractico.controllers;
 
 import miPractico.views.MenuView;
 
+
 public class MenuController {
 
     private MenuView view;
+    private MatrizController matrizController;
 
     public void execute() {
         int opciones;
         view = new MenuView();
+        matrizController = new MatrizController();
 
         do{
             view.mostrarMenu();
@@ -16,6 +19,8 @@ public class MenuController {
             switch (opciones) {
                 case 1:
                     view.mensajeEnPantalla(" Desafío 1: Valores Mínimo y Máximo");
+                    matrizController.pedirFilasyColumnas();
+                    matrizController.generarYMostrarMatriz();
                     break;
                     case 2:
                     view.mensajeEnPantalla(" Desafío 2: Diagonales Mayor y Menor");
