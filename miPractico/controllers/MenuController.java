@@ -33,7 +33,7 @@ public class MenuController {
                     view.mensajeEnPantalla(" Gracias por ver mi trabajo!!!");
                     break;
                 default:
-                view.mensajeEnPantalla(" La opción elegida es incorrecta.");
+                view.mensajeEnPantalla(" La opción ingresada es incorrecta.");
                     break;
             }
         } while (6 != opciones );
