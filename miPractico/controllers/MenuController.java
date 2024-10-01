@@ -11,6 +11,8 @@ public class MenuController {
     private UnaXController unaXController;
     private FilasParesCotroller filasParesCotroller;
     private CaracolController caracolController;
+    private TrianguloAzulController trianguloAzulController;
+  
 
 
 public void execute() {
@@ -22,6 +24,7 @@ public void execute() {
         unaXController = new UnaXController();
         filasParesCotroller = new FilasParesCotroller();
         caracolController = new CaracolController();
+        trianguloAzulController = new TrianguloAzulController();
         
         do{
             view.mostrarMenu();
@@ -64,6 +67,9 @@ public void execute() {
                     view.mensajeEnPantalla(" Desafío 5: Pintar un Triángulo Azul");
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
+                    //uso el controlador para pintar el triángulo azul
+                    trianguloAzulController.pintarTrianguloAzul(matrizController.getMatriz());
+
                     break;
 
                     case 6:
