@@ -29,6 +29,8 @@ public class MatrizController {
         matriz.generarNumerosAleatorios();
         matrizView.mostrarMatriz(matriz.getDatos());
     }
+
+    //metodo para devolver la matriz que se genera 
  public int[][] getMatriz() {
         return matriz.getDatos();
     }

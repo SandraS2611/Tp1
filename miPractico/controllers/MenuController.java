@@ -8,6 +8,7 @@ public class MenuController {
     private MenuView view;
     private MatrizController matrizController;
     private ValoresController valoresController;
+    private UnaXController unaXController;
 
 
 public void execute() {
@@ -15,6 +16,7 @@ public void execute() {
         view = new MenuView();
         matrizController = new MatrizController();
         valoresController = new ValoresController();
+        unaXController = new UnaXController();
         
         do{
             view.mostrarMenu();
@@ -31,6 +33,8 @@ public void execute() {
                     view.mensajeEnPantalla(" Desafío 2: Dibujar una X");
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
+                    //uso el controlador para pintar la "X"
+                    unaXController.pintarX(matrizController.getMatriz());
                     break;
 
                     case 3:
