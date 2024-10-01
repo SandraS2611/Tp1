@@ -10,6 +10,7 @@ public class MenuController {
     private ValoresController valoresController;
     private UnaXController unaXController;
     private FilasParesCotroller filasParesCotroller;
+    private CaracolController caracolController;
 
 
 public void execute() {
@@ -19,6 +20,7 @@ public void execute() {
         valoresController = new ValoresController();
         unaXController = new UnaXController();
         filasParesCotroller = new FilasParesCotroller();
+        caracolController = new CaracolController();
         
         do{
             view.mostrarMenu();
@@ -29,6 +31,7 @@ public void execute() {
                     view.mensajeEnPantalla(" Desafío 1: Pintar los Valores Mínimo y Máximo");
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
+                    //uso el controlador para pintar el número mas chico y el más grande
                     valoresController.calcularYMostrarValores(matrizController.getMatriz());
                     break;
 
@@ -45,13 +48,16 @@ public void execute() {
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
                     int [][] matriz = matrizController.getMatriz();
+                    //uso el controlador para pintar las filas pares
                     filasParesCotroller.pintarFilasParesEnMatriz(matriz);
                     break;
 
                     case 4:
-                    view.mensajeEnPantalla(" Desafío 4: Pintar un Recorrido Caracol");
+                    view.mensajeEnPantalla(" Desafío 4: Pintar un Caracol");
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
+                    //uso el controlador para pintar el caracol
+                    caracolController.pintarCaracolEnMatriz(matrizController.getMatriz());
                     break;
 
                     case 5:
