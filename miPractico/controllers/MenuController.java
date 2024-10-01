@@ -15,6 +15,7 @@ public class MenuController {
 
 public void execute() {
         int opciones = 0;
+        //int [][] matriz = matrizController.getMatriz();
         view = new MenuView();
         matrizController = new MatrizController();
         valoresController = new ValoresController();
@@ -47,15 +48,14 @@ public void execute() {
                     view.mensajeEnPantalla(" Desafío 3: Pintar las Filas Pares");
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
-                    int [][] matriz = matrizController.getMatriz();
                     //uso el controlador para pintar las filas pares
-                    filasParesCotroller.pintarFilasParesEnMatriz(matriz);
+                    filasParesCotroller.pintarFilasParesEnMatriz(matrizController.getMatriz());
                     break;
 
                     case 4:
                     view.mensajeEnPantalla(" Desafío 4: Pintar un Caracol");
                     matrizController.pedirFilasyColumnas();
-                    matrizController.generarYMostrarMatriz();
+                    matrizController.generarYMostrarMatriz();                   
                     //uso el controlador para pintar el caracol
                     caracolController.pintarCaracolEnMatriz(matrizController.getMatriz());
                     break;
