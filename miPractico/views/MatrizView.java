@@ -1,4 +1,4 @@
-package miPractico.views;
+package miPractico.Views;
 
 public class MatrizView {
     public void mostrarMatriz(int[][] datos) {

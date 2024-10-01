@@ -1,8 +1,10 @@
-package utils;
-import java.util.Random;
-import miPractico.controllers.MatrizController;
+package miPractico.Models;
 
-public class Matriz {
+import java.util.Random;
+
+import miPractico.Controllers.MatrizController;
+
+public class MatrizModel {
     private int[][] matriz;
     private int filas;
     private int columnas;
@@ -10,11 +12,11 @@ public class Matriz {
 
     public static void main(String[] args) {
         MatrizController matrizController = new MatrizController();
-        matrizController.crearMatriz();
+        matrizController.pedirFilasyColumnas();
         matrizController.generarYMostrarMatriz();
     }
 
-    public Matriz(int filas, int columnas) {
+    public MatrizModel(int filas, int columnas) {
         this.filas = filas;
         this.columnas = columnas;
         this.matriz = new int[filas][columnas];

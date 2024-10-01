@@ -1,17 +1,18 @@
-package miPractico.controllers;
+package miPractico.Controllers;
 
 import java.util.Scanner;
-import miPractico.views.MatrizView;
-import utils.Matriz;
+import miPractico.Models.MatrizModel;
+import miPractico.Views.MatrizView;
 
 public class MatrizController {
 
-    private Matriz matriz;
+    private MatrizModel matriz;
     private MatrizView matrizView;
     private Scanner scanner;
 
     public MatrizController() {
-        matrizView = new MatrizView();
+        this.matrizView = new MatrizView();
+        //matrizView = new MatrizView();
         scanner = new Scanner(System.in);
     }
 
@@ -21,11 +22,15 @@ public class MatrizController {
         System.out.println("Ingresa la cantidad de columnas: ");
         int columnas = scanner.nextInt();
 
-        matriz = new Matriz(filas, columnas);
+        matriz = new MatrizModel(filas, columnas);
     }
 
     public void generarYMostrarMatriz() {
         matriz.generarNumerosAleatorios();
         matrizView.mostrarMatriz(matriz.getDatos());
     }
+ public int[][] getMatriz() {
+        return matriz.getDatos();
+    }
+
 }
