@@ -9,6 +9,7 @@ public class MenuController {
     private MatrizController matrizController;
     private ValoresController valoresController;
     private UnaXController unaXController;
+    private FilasParesCotroller filasParesCotroller;
 
 
 public void execute() {
@@ -17,10 +18,12 @@ public void execute() {
         matrizController = new MatrizController();
         valoresController = new ValoresController();
         unaXController = new UnaXController();
+        filasParesCotroller = new FilasParesCotroller();
         
         do{
             view.mostrarMenu();
             opciones = view.elegirOpciones();
+
             switch (opciones) {
                 case 1:
                     view.mensajeEnPantalla(" Desafío 1: Pintar los Valores Mínimo y Máximo");
@@ -38,9 +41,11 @@ public void execute() {
                     break;
 
                     case 3:
-                    view.mensajeEnPantalla(" Desafío 3: Pintar las Celdas Pares");
+                    view.mensajeEnPantalla(" Desafío 3: Pintar las Filas Pares");
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
+                    int [][] matriz = matrizController.getMatriz();
+                    filasParesCotroller.pintarFilasParesEnMatriz(matriz);
                     break;
 
                     case 4:
