@@ -27,30 +27,6 @@ public void execute() {
                     valoresController.calcularYMostrarValores(matrizController.getMatriz());
                     break;
 
-                    case 2:
-                    view.mensajeEnPantalla(" Desafío 2: Dibujar una X");
-                    matrizController.pedirFilasyColumnas();
-                    matrizController.generarYMostrarMatriz();
-                    break;
-
-                    case 3:
-                    view.mensajeEnPantalla(" Desafío 3: Pintar las Celdas Pares");
-                    matrizController.pedirFilasyColumnas();
-                    matrizController.generarYMostrarMatriz();
-                    break;
-
-                    case 4:
-                    view.mensajeEnPantalla(" Desafío 4: Pintar un Recorrido Caracol");
-                    matrizController.pedirFilasyColumnas();
-                    matrizController.generarYMostrarMatriz();
-                    break;
-
-                    case 5:
-                    view.mensajeEnPantalla(" Desafío 5: Pintar un Triángulo Azul");
-                    matrizController.pedirFilasyColumnas();
-                    matrizController.generarYMostrarMatriz();
-                    break;
-
                     case 6:
                     view.mensajeEnPantalla(" Gracias por ver mi trabajo!!!");
                     break;
