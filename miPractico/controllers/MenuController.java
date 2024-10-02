@@ -7,7 +7,6 @@ public class MenuController {
 
     private MenuView view;
     private MatrizController matrizController;
-    private ValoresController valoresController;
     private UnaXController unaXController;
 
 
@@ -15,44 +14,18 @@ public void execute() {
         int opciones = 0;
         view = new MenuView();
         matrizController = new MatrizController();
-        valoresController = new ValoresController();
         unaXController = new UnaXController();
         
         do{
             view.mostrarMenu();
             opciones = view.elegirOpciones();
             switch (opciones) {
-                case 1:
-                    view.mensajeEnPantalla(" Desafío 1: Pintar los Valores Mínimo y Máximo");
-                    matrizController.pedirFilasyColumnas();
-                    matrizController.generarYMostrarMatriz();
-                    valoresController.calcularYMostrarValores(matrizController.getMatriz());
-                    break;
-
                     case 2:
                     view.mensajeEnPantalla(" Desafío 2: Dibujar una X");
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
                     //uso el controlador para pintar la "X"
                     unaXController.pintarX(matrizController.getMatriz());
-                    break;
-
-                    case 3:
-                    view.mensajeEnPantalla(" Desafío 3: Pintar las Celdas Pares");
-                    matrizController.pedirFilasyColumnas();
-                    matrizController.generarYMostrarMatriz();
-                    break;
-
-                    case 4:
-                    view.mensajeEnPantalla(" Desafío 4: Pintar un Recorrido Caracol");
-                    matrizController.pedirFilasyColumnas();
-                    matrizController.generarYMostrarMatriz();
-                    break;
-
-                    case 5:
-                    view.mensajeEnPantalla(" Desafío 5: Pintar un Triángulo Azul");
-                    matrizController.pedirFilasyColumnas();
-                    matrizController.generarYMostrarMatriz();
                     break;
 
                     case 6:
