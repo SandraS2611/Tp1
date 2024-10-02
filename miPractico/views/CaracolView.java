@@ -8,6 +8,7 @@ public class CaracolView {
 
         System.out.println("");
         System.out.println("Matriz con el Caracol pintado:\n");
+        System.out.println();
 
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {

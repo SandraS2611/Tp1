@@ -7,6 +7,8 @@ public class TrianguloAzulView {
     public void mostrarTrianguloAzul(int[][] matriz) {
         System.out.println();
         System.out.println("Triángulo Azul pintado en la Matriz: ");
+        System.out.println();
+        
         if (matriz != null) {
             for (int i = 0; i < matriz.length; i++) {
                 for (int j = 0; j < matriz[i].length; j++) {
