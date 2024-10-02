@@ -9,7 +9,6 @@ public class MenuController {
     private MatrizController matrizController;
     private ValoresController valoresController;
     private UnaXController unaXController;
-    private FilasParesCotroller filasParesCotroller;
 
 
 public void execute() {
@@ -18,7 +17,6 @@ public void execute() {
         matrizController = new MatrizController();
         valoresController = new ValoresController();
         unaXController = new UnaXController();
-        filasParesCotroller = new FilasParesCotroller();
         
         do{
             view.mostrarMenu();
@@ -44,8 +42,6 @@ public void execute() {
                     view.mensajeEnPantalla(" Desafío 3: Pintar las Filas Pares");
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
-                    int [][] matriz = matrizController.getMatriz();
-                    filasParesCotroller.pintarFilasParesEnMatriz(matriz);
                     break;
 
                     case 4:
