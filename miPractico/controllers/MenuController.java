@@ -9,7 +9,7 @@ public class MenuController {
     private MatrizController matrizController;
     private ValoresController valoresController;
     private UnaXController unaXController;
-    private FilasParesCotroller filasParesCotroller;
+    private FilasImparesController filasImparesController;
     private CaracolController caracolController;
     private TrianguloAzulController trianguloAzulController;
   
@@ -22,7 +22,7 @@ public void execute() {
         matrizController = new MatrizController();
         valoresController = new ValoresController();
         unaXController = new UnaXController();
-        filasParesCotroller = new FilasParesCotroller();
+        filasImparesController = new FilasImparesController();
         caracolController = new CaracolController();
         trianguloAzulController = new TrianguloAzulController();
         
@@ -52,7 +52,7 @@ public void execute() {
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
                     //uso el controlador para pintar las filas pares
-                    filasParesCotroller.pintarFilasParesEnMatriz(matrizController.getMatriz());
+                    filasImparesController.pintarFilasImparesEnMatriz(matrizController.getMatriz());
                     break;
 
                     case 4:
