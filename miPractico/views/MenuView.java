@@ -1,4 +1,4 @@
-package miPractico.views;
+package miPractico.Views;
 
 import utils.View;
 
@@ -15,22 +15,24 @@ public class MenuView {
     public void mostrarMenu() {
 
         System.out.println("\n");
-        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        System.out.println("**** Elija la opción de acuerdo al Desafío que desea ver ****");
-        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println(" **** Ingrese un número de acuerdo a la opción que desea elegir ****");
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("\n");
-        System.out.println("Desafío 1: Valores Mínimo y Máximo");
-        System.out.println("Desafío 2: Diagonales Mayor y Menor");
-        System.out.println("Desafío 3: Celdas Pares");
-        System.out.println("Desafío 4: Recorrido Caracol");
-        System.out.println("Desafío 5: Triángulo Azul");
-        System.out.println("Salir");
+        System.out.println("1- Desafío 1");
+        System.out.println("2- Desafío 2");
+        System.out.println("3- Desafío 3");
+        System.out.println("4- Desafío 4");
+        System.out.println("5- Desafío 5");
+        System.out.println("6- Salir");
+        System.out.println("\n");
     }
 
     public void mensajeEnPantalla(String mensaje) {
-        System.out.println("----------------------------------------------");
+        System.out.println("\n");
+        System.out.println("--------------------------------------------------");
         System.out.println(mensaje);
-        System.out.println("----------------------------------------------");
+        System.out.println("--------------------------------------------------");
         System.out.println("\n");
 
     }

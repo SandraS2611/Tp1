@@ -1,5 +1,4 @@
-
-import miPractico.controllers.MenuController;
+import miPractico.Controllers.MenuController;
 
 public class App {
 
