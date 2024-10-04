@@ -11,11 +11,14 @@ public class MenuController {
     private MatrizController matrizController;
 <<<<<<< HEAD
     private UnaXController unaXController;
+<<<<<<< HEAD
 =======
     private FilasImparesController filasImparesController;
     private TrianguloAzulController trianguloAzulController;
   
 >>>>>>> TriánguloAzul
+=======
+>>>>>>> CeldasPares
 
 
 public void execute() {
@@ -25,10 +28,13 @@ public void execute() {
         matrizController = new MatrizController();
 <<<<<<< HEAD
         unaXController = new UnaXController();
+<<<<<<< HEAD
 =======
         filasImparesController = new FilasImparesController();
         trianguloAzulController = new TrianguloAzulController();
 >>>>>>> TriánguloAzul
+=======
+>>>>>>> CeldasPares
         
         do{
             view.mostrarMenu();
@@ -46,8 +52,17 @@ public void execute() {
                     view.mensajeEnPantalla(" Desafío 3: Pintar las Filas Pares");
                     matrizController.pedirFilasyColumnas();
                     matrizController.generarYMostrarMatriz();
+<<<<<<< HEAD
                     //uso el controlador para pintar las filas pares
                     filasImparesController.pintarFilasImparesEnMatriz(matrizController.getMatriz());
+=======
+                    break;
+
+                    case 4:
+                    view.mensajeEnPantalla(" Desafío 4: Pintar un Recorrido Caracol");
+                    matrizController.pedirFilasyColumnas();
+                    matrizController.generarYMostrarMatriz();
+>>>>>>> CeldasPares
                     break;
 
                     case 5:
