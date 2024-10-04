@@ -1,20 +1,22 @@
 package miPractico.Controllers;
 
 import miPractico.Views.MenuView;
+import miPractico.Controllers.UnaXController;
+import miPractico.Views.ValoresController;
 
 
 public class MenuController {
 
     private MenuView view;
     private MatrizController matrizController;
-    private ValoresController valoresController;
+    private UnaXController unaXController;
 
 
 public void execute() {
         int opciones = 0;
         view = new MenuView();
         matrizController = new MatrizController();
-        valoresController = new ValoresController();
+        unaXController = new UnaXController();
         
         do{
             view.mostrarMenu();
