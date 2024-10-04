@@ -4,6 +4,7 @@ import miPractico.Models.CaracolModel;
 import miPractico.Views.CaracolView;
 
 public class CaracolController {
+    
     private CaracolModel caracolModel;
     private CaracolView caracolView;
 
@@ -13,9 +14,7 @@ public class CaracolController {
     }
 
     public void pintarCaracolEnMatriz(int[][] matriz) {
-        caracolView.pintarCaracolEnMatriz(matriz);
-        System.out.println();
-        caracolModel.recorridoCaracol(matriz);
-        System.out.println();
-}
+        caracolModel.pintarCaracolEnMatriz(matriz);
+        caracolView.mostrarCaracol(matriz);
+    }
 }
